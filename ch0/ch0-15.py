@@ -1,5 +1,9 @@
+# The Final Countdown
 '''
-The Final Countdown
+This is based on flexible countdown. Given 4 parameters param1, param2, param3, param4.
+Print the multiples of param1, starting at param2 and extending to param3. One excepion: 
+if multiple is equal to param4, then skip that one (don't print). Do this usinf While.
+Given 3,5,17,9, print 6,12,15
 '''
 def finalCount(p1,p2,p3,p4):
 	if(p2>p3 or p1==0):

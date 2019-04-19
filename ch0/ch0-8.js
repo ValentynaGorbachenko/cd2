@@ -1,5 +1,6 @@
+// Print and count
 /*
-Print and count
+Print all inegers multipels of 5, from 512 to 4096. Afterward, also log how many there were
 */
 function printAndCount(){
 	let count =0;

@@ -1,5 +1,6 @@
+# Whoa, that sucker's huge
 '''
-Whoa, that sucker's huge
+Add odd integers from -300000 to 300000, and console.log the final sum
 '''
 def oddSum(beg, end):
 	sum=0

@@ -1,5 +1,8 @@
+// Flexible Countdown
 /*
-Flexible Countdown
+Based on earlier "Contdown By Four", given lowNum, highNum, mult, 
+print multiples of mult from highNum to lowNum, using for loop. 
+For (2,9,3), print 9 6 3 (on successive lines)
 */
 function countByFourFl (highNum, lowNum, mult) {
 	if (highNum<lowNum || mult == 0){

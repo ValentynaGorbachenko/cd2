@@ -1,5 +1,6 @@
+// Countdown by 4
 /*
-Countdown by 4
+Log positive numbers starting at 2016, counting down by 4 (exclude 0), without For loop 
 */
 function countByFour (num) {
 	if (num<=0){

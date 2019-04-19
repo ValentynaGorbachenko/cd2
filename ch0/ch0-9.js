@@ -1,5 +1,6 @@
+// Multiples of six
 /*
-Multiples of six
+Print multiples of 6 up to 60000 using While
 */
 function multOfSix(n){
 	let x=6;
@@ -8,4 +9,4 @@ function multOfSix(n){
 		x+=6
 	}
 }
-multOfSix(60);
+multOfSix(60000);
