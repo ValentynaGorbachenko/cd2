@@ -9,7 +9,7 @@ def valueGreaterThanSecond(arr):
 			if (isinstance(i, int)):
 				if (i>arr[1]):
 					arrRes.append(i)
-	print arrRes
+	print (arrRes)
 valueGreaterThanSecond([])
 valueGreaterThanSecond([2])
 valueGreaterThanSecond([5, 2])

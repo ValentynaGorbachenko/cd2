@@ -7,7 +7,7 @@ def countdown (num):
 	arr = []
 	for i in range (num, -1, -1):
 		arr.append(i)
-	print len(arr)
-	print arr
+	print (len(arr))
+	print (arr)
 
 countdown(5)

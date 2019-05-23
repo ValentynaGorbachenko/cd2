@@ -5,9 +5,9 @@ What happens if the array's first value in not a number, but a string( like "wha
 '''
 def firstPlusLength(arr):
 	try:
-		print arr[0]+len(arr)
+		print (arr[0]+len(arr))
 	except:
-		print "Error"
+		print ("Error")
 
 firstPlusLength([])
 firstPlusLength([1])
@@ -17,17 +17,17 @@ firstPlusLength(["1"])
 
 def firstPlusLength2(arr):
 	if (len(arr)==0):
-		print "Array is empty"
+		print ("Array is empty")
 		return
 	if (isinstance(arr[0], bool)):
-		print "The value can not be added - type error"
+		print ("The value can not be added - type error")
 	elif (isinstance(arr[0], str)):
-		print "The value can not be added - type error"
+		print ("The value can not be added - type error")
 	elif isinstance(arr[0], int):
-		print arr[0]+len(arr)
+		print (arr[0]+len(arr))
 		return arr[0]+len(arr)
 	else:
-		print "Type error"
+		print ("Type error")
 
 firstPlusLength2([])
 firstPlusLength2([1])
