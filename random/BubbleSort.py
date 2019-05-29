@@ -9,8 +9,8 @@ def sortBS(arr):
 	for j in range(len(arr)-1):
 		for i in range(len(arr)-1-j):
 			if (arr[i]>arr[i+1]):
-				print ('before', arr)
+				# print ('before', arr)
 				arr[i], arr[i+1] = arr[i+1], arr[i]
-				print ('after', arr)
-	print ("*"*20)
+				# print ('after', arr)
+	# print ("*"*20)
 	return arr
