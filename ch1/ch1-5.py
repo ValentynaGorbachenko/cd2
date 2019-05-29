@@ -5,10 +5,10 @@ Given two numbers, return array of legth num1, with each value num2. Print "Jinx
 def thisLengthThatValue(num1, num2):
 	arr = []
 	if (num1==num2):
-		print "Jinx!"
+		print ("Jinx!")
 	for i in range(num1):
 		arr.append(num2)
-	print arr
+	print (arr)
 
 
 thisLengthThatValue(4, 4)
