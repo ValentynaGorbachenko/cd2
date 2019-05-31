@@ -3,7 +3,7 @@
 import unittest
 from jewels_and_stones_771 import j_and_s_3
 
-class jewels_and_stones(unittest.TestCase):
+class jewels_and_stones_test(unittest.TestCase):
 
     def test_j_and_s1(self):
         self.assertTrue(j_and_s_3("aA", "aAAbbbb") == 3)
