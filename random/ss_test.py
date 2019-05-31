@@ -2,12 +2,6 @@
 import unittest
 from SelectionSort import sortSS
 
-# print(sortBS([2, 1,-3,0]))
-# print(sortBS([2, 1,0]))
-# print(sortBS([]))
-# print(sortBS([2]))
-# print(sortBS([2, 1]))
-
 class SelectionSortTest(unittest.TestCase):
 
 	def test_empty_array(self):
