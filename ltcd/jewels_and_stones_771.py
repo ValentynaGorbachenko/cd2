@@ -25,19 +25,19 @@ def j_and_s(str_j, str_s):
     count =0 
     for j in str_j:
         for s in str_s:
-            print ("j is ", j, "is is ", s, "strings are ", str_j, " ", str_s)
+            # print ("j is ", j, "is is ", s, "strings are ", str_j, " ", str_s)
             if j == s:
                 count=count +1
-                print ("count is ", count)
+                # print ("count is ", count)
     return count
 
 def j_and_s_2(str_j, str_s):
     count = 0
     for s in str_s:
-        print ("s is ", s, "strings are ", str_j, " ", str_s)
+        # print ("s is ", s, "strings are ", str_j, " ", str_s)
         if s in str_j:
             count=count +1
-            print ("count is ", count)
+            # print ("count is ", count)
                
     return count
 
@@ -46,10 +46,10 @@ def j_and_s_3(str_j, str_s):
     # make a set from the string
     set_j = set(str_j) 
     count = 0
-    print(set_j)
+    # print(set_j)
     for s in str_s:
         if s in set_j:
-            count = count +1
+            count += 1
     return count
 
 

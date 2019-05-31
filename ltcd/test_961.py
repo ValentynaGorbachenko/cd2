@@ -5,13 +5,13 @@ from repeatedNTimes_961 import repeatedNTimes
 
 class repeatedNTimesTest(unittest.TestCase):
 
-    def test_sort_array_by_parity_1(self):
+    def test_reteated_n_times_1(self):
         self.assertEqual(repeatedNTimes([1,2,3,3]), 3)
 
-    def test_sort_array_by_parity_2(self):
+    def test_reteated_n_times_2(self):
         self.assertEqual(repeatedNTimes([]), None)
 
-    def test_sort_array_by_parity_3(self):
+    def test_reteated_n_times_3(self):
         self.assertEqual(repeatedNTimes([5,1,5,2,5,3,5,4]), 5)
 
     
