@@ -34,7 +34,7 @@ def sortedSquares2(A):
         j = 0
         while j < N and A[j] < 0:
             j += 1
-        i = j - 1
+            i = j - 1
         
         ans = []
         while 0 <= i and j < N:
