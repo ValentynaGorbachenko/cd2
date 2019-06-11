@@ -1,32 +1,32 @@
-# is_test.py
+# test_bs.py
 import unittest
-from InsertionSort import sortIS
+from BubbleSort import sortBS
 
-class InsertionSortTest(unittest.TestCase):
-    
+class BubbleSortTest(unittest.TestCase):
+
     def test_empty_array(self):
-        self.assertEqual(sortIS([]), [])
-    
+        self.assertEqual(sortBS([]), [])
+
     def test_one_value_array(self):
-        self.assertEqual(sortIS([2]), [2])
+        self.assertEqual(sortBS([2]), [2])
 
     def test_sort1(self):
-        self.assertEqual(sortIS([4,0,3,1,-1,2]), [-1,0,1,2,3,4])
-    
+        self.assertEqual(sortBS([2,1,3,4,0,-1]), [-1, 0, 1, 2, 3, 4])
+
     def test_sort2(self):
-        self.assertEqual(sortIS([2,-1]), [-1, 2])
-    
+        self.assertEqual(sortBS([2,-1]), [-1, 2])
+
     def test_different_type_string(self):
         with self.assertRaises(TypeError):
-            sortIS("string")
-    
+            sortBS("string")
+
     def test_different_type_number(self):
         with self.assertRaises(TypeError):
-            sortIS(3)
-    
+            sortBS(3)
+
     def test_different_type_None(self):
         with self.assertRaises(TypeError):
-            sortIS(None)
+            sortBS(None)
 
 if __name__ == '__main__':
     unittest.main()

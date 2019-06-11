@@ -1,4 +1,4 @@
-# bs_test.py
+# test_ss.py
 import unittest
 from SelectionSort import sortSS
 
