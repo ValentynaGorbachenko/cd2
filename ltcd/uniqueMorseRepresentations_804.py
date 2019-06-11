@@ -26,17 +26,20 @@ Each words[i] will have length in range [1, 12].
 words[i] will only consist of lowercase letters.
 '''
 import string
-def uniqueMorseRepresentations(words):
-    alphabet_morse = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
-    set_val = {}
-    set_val = set()
-    for word in words:
-        temp_mors = ""
-        for char in word:
-            temp_mors += alphabet_morse[(string.ascii_lowercase.index(char))]
-        set_val.add(temp_mors)
-        # print(set_val)
-    return len(set_val)
+class uniqueMorseRepresentationsClass(object):
+    
+    def uniqueMorseRepresentations(self,words):
+        alphabet_morse = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+        set_val = {}
+        set_val = set()
+        for word in words:
+            temp_mors = ""
+            word = word.lower()
+            for char in word:
+                temp_mors += alphabet_morse[(string.ascii_lowercase.index(char))]
+            set_val.add(temp_mors)
+            # print(set_val)
+        return len(set_val)
 
 
 

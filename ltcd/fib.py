@@ -10,7 +10,7 @@ def fib(n):
         return 1
     return fib(n-2) + fib(n-1)
 
-print (fib(12))
+# print (fib(12))
 
 def fir_iter(n):
     i, j = 0, 1
@@ -24,4 +24,9 @@ def fir_iter(n):
         # j = temp + j
     return i
 
-print(fir_iter(5))
+# print(fir_iter(5))
+
+# to except arguments from the command line 
+if __name__ == "__main__":
+    import sys
+    print(fib(int(sys.argv[1])))
