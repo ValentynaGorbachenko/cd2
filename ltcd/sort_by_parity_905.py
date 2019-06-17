@@ -38,6 +38,16 @@ def sortArrayByParity(A):
 # print(sortArrayByParity([4,1,3,2]))
 # print(sortArrayByParity([5,6,2,8,1,9]))
 
-
-
+def even_odd(A):
+    next_even , next_odd = 0, len(A) - 1
+    while next_even < next_odd:
+        if A[ next_even ] % 2 == 0:
+            next_even += 1
+        else:
+            A[ next_even ], A[next_odd] = A[next_odd], A[ next_even ]
+            next_odd -= 1
+    print (A)
+s = [5,4,1,3,2]
+even_odd(s)
+print (s)
 
