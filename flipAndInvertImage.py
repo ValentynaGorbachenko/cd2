@@ -48,8 +48,8 @@ def flipAndInvertImage2(arr):
 flipAndInvertImage2([[1,1,0],[1,0,1],[0,0,0]]) #[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 
 def flipAndInvertImage3(arr):
-    return [[ 0 if y else 1 for y in x[::-1] ] for x in arr]
-    # return [[0 if y else 1 for y in (x[::-1])] for x in arr]
+    # return [[ 0 if y else 1 for y in x[::-1] ] for x in arr]
+    return [[ y^1 for y in x[::-1] ] for x in arr]
 
 print (flipAndInvertImage3([[1,1,0],[1,0,1],[0,0,0]])) #[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]])
 
