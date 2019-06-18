@@ -3,10 +3,8 @@ def heightChecker(arr):
         return 0
 
     sorted_array = list(arr)
-
-    print(arr, sorted_array)
     sorted_array.sort()
-    print(arr, sorted_array)
+    
     count = 0
     for i in range(len(arr)):
         if arr[i] != sorted_array[i]:

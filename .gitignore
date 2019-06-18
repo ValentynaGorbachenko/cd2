@@ -103,3 +103,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+ltcd/convertStringNumbers.py
+ltcd/countOddNumbersBelowN.py
+ltcd/lead_shot.csv
+ltcd/longIncrSum.py
+ltcd/min_max_avg.py
+.gitignore
