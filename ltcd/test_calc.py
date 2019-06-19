@@ -63,16 +63,20 @@ class CalculatorTest(unittest.TestCase):
 
 
         actual_result = driver.find_elements_by_xpath("//*[@id='main']//div[1]/div[2]/div[1]/div[5]/div[2]/div[1]/span[2]/span[position()>1]")
+        print(actual_result[1].text)
         value = ""
         for a_r in actual_result:
+            # print(a_r.text)
             a_r = a_r.text
+            print(a_r)
             value = value + str(a_r)
 
+        # print(str(value))
         actual_result = value
         # self.assertEqual(value, expected_result)
         print(type(actual_result), type(expected_result))
-
-        self.assertEqual(string.ascii_lowercase.index(actual_result), expected_result, "was expected that actual {0} is equal to expected {1}".format(actual_result, expected_result))
+        print(bin(actual_result))
+        self.assertEqual(ord(actual_result), bin(expected_result), "was expected that actual {0} is equal to expected {1}".format(actual_result, expected_result))
         pass
 
         #TODO rounding to 10 chars after period, if expected_result gives more after devision

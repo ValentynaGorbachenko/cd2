@@ -24,9 +24,21 @@ def fir_iter(n):
         # j = temp + j
     return i
 
+def fib_arr(N):
+    f = [0, 1]
+        
+    if N <= 1:
+        return f[N]
+    else:
+        for i in range(2, N + 1):
+            f.append(f[i - 1] + f[i - 2])
+    print(f, f[N])   
+    return f[N]
+
+fib_arr(6)
 # print(fir_iter(5))
 
 # to except arguments from the command line 
 if __name__ == "__main__":
     import sys
-    print(fib(int(sys.argv[1])))
+    # print(fib(int(sys.argv[1])))
