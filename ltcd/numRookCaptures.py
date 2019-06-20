@@ -28,11 +28,11 @@ def numRookCaptures(board):
             u, d, r, l = i, i, j, j
             
             
-            print("i is ", i, " j is ", j)
+            # print("i is ", i, " j is ", j)
             
             # up
             while u-1 != -1:
-                print("u-1 != -1 ", u-1 != -1)
+                # print("u-1 != -1 ", u-1 != -1)
                 if board[u-1][j] == ".":
                     u-=1
                 elif board[u-1][j] == "B":
@@ -40,11 +40,11 @@ def numRookCaptures(board):
                 elif board[u-1][j] == "p":
                     count+=1
                     break
-            print("count after up ",count)
+            # print("count after up ",count)
             # down
             
             while d+1 != len(board):
-                print("d+1 != len(board) ", d+1 != len(board))
+                # print("d+1 != len(board) ", d+1 != len(board))
                 if board[d+1][j] == ".":
                     d +=1
                 elif board[d+1][j] == "B":
@@ -55,7 +55,7 @@ def numRookCaptures(board):
             
             # left
             while l-1 != -1:
-                print("l-1 != -1 ",l-1 != -1)
+                # print("l-1 != -1 ",l-1 != -1)
                 if board[i][l-1] == ".":
                     l-=1
                 elif board[i][l-1] == "B":
@@ -66,7 +66,7 @@ def numRookCaptures(board):
 
             # right
             while r+1 != len(row):
-                print("r+1 != len(row) ",r+1 != len(row))
+                # print("r+1 != len(row) ",r+1 != len(row))
                 if board[i][r+1] == ".":
                     r+=1
                 elif board[i][r+1] == "B":
@@ -75,7 +75,7 @@ def numRookCaptures(board):
                     count+=1
                     break
         
-    print (count)
+    # print (count)
     return count
 
 numRookCaptures([[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".","R",".",".",".","p"],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."]])
