@@ -17,7 +17,7 @@ Note:
 0 <= A[i], B[i] < 100
 '''
 
-def findLength(A,B):
+def findLength(A,B): # doesn't work
     count=0
     max_count=0
 
@@ -49,33 +49,26 @@ def findLength(A,B):
 
 
 
-def findLength2(A,B):
+def findLength2(A,B): # brute force 
     count=0
     max_count=0
 
     for i, el in enumerate(A):
-        # print(i,el)
+        
         for j, el_j in enumerate(B):
             print('i is ',i, ', el is ',el, ', j is ',j, ', el_j is ', el_j)
             ii = i
             try:
                 print("in try")
-                # j=B.index(el)
-                # # while I can find index of el try checking next index of el
-                # ind = j
 
                 while A[ii] == B[j]:
                     print('A[ii], B[j] is ', A[ii], ", ", B[j])
                     count+=1
                     ii+=1
                     j+=1
-                # print ('ind is ', ind, B[ind+1:])
-                # ind=B[ind+1:].index(el)
-                # print ('ind is ',ind)
                 
             except:
-                # continue
-                # break
+                
                 pass
                 print("index out of range")
             print('conut is ',count)
