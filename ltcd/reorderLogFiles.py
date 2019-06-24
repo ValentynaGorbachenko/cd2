@@ -78,7 +78,7 @@ def reorderLogFiles4(logs): # modified mine solution
         return(a[1], a[0])
 
     print(logs)
-    if len(logs) < 1:
+    if len(logs) < 2:
         return logs
 
     temp_logs, res_letters, res_digits = [], [], []
