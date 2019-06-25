@@ -78,9 +78,39 @@ def findLength2(A,B): # brute force
     print("max is ", max_count)
     return max_count
 
-findLength2([1,2,3,2,1],[3,2,1,4,7])
-findLength2([0,1,1,1,1,0],[1,1,1,1])
-findLength2([0,0,0,0,0,0,1,0,0,0],[0,0,0,0,0,0,0,1,0,0])
+# findLength2([1,2,3,2,1],[3,2,1,4,7])
+# findLength2([0,1,1,1,1,0],[1,1,1,1])
+# findLength2([0,0,0,0,0,0,1,0,0,0],[0,0,0,0,0,0,0,1,0,0])
 
+def findLength3(A, B):
+    matrix = []
+    # print(matrix)
+    max_count = 0
+    for i in range(len(A)):
+        matrix.append([])
+        for j in range(len(B)):
+            
+            if A[i] == B[j]:
+                matrix[i].append(1)
+            else:
+                matrix[i].append(0)
+            
+            if matrix[i][j] == 1:
+                    
+                if i >=1 and j >= 1:
+                    matrix[i][j] += matrix[i-1][j-1]
+
+
+        # print(max(max(matrix)))
+        # print(((i,matrix[i], max(matrix[i]), max_count)))
+        if max_count<max(matrix[i]):
+            max_count = max(matrix[i])
+
+    # print(matrix)
+    # print('max_count is ',max_count)
+    return max_count
+# findLength3([1,2,3,2,1],[3,2,1,4])
+# findLength3([0,1,1,1,1,0],[1,1,1,1])
+print(findLength3([0,0,0,0,0,0,1,0,0,0],[0,0,0,0,0,0,0,1,0,0]))
 
 
