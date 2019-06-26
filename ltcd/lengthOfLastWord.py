@@ -1,0 +1,27 @@
+'''
+Given a string s consists of upper/lower-case alphabets and empty space characters ' ', 
+return the length of last word in the string.
+
+If the last word does not exist, return 0.
+
+Note: A word is defined as a character sequence consists of non-space characters only.
+
+Example:
+
+Input: "Hello World"
+Output: 5
+
+'''
+
+def lengthOfLastWord(s):
+    s = s.strip()
+    print(s)
+    r=s.split(" ")
+
+    return len(r[len(r)-1])
+
+print(lengthOfLastWord("a "))
+print(lengthOfLastWord(" "))
+print(lengthOfLastWord(""))
+print(lengthOfLastWord("b   a    "))
+print(lengthOfLastWord("hello world"))
