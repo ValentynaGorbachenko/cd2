@@ -148,6 +148,7 @@ print('*'*10)
 print('*'*10)
 
 def compress2(chars):
+    # chars.sort()
     dict_chars = {}
     for i in set(chars):
         dict_chars[i] = chars.count(i)
@@ -183,4 +184,11 @@ print('*'*10)
 print('*'*10)
 # compress2(["a","b","b","b","b","b","b","b","b","b","b","b","b"])
 print('*'*10)
-print(compress2(["w","w","w","w","w","b","b","g","g","g","g","a","a","a","i","i","i","i","y","y","p","v","v","v","u","u","u","y","y","y","y","y","y","y","y","y","s","q","q","q","q","q","q","q","q","q","q","n","n","n"]))
+# print(compress2(["w","w","w","w","w","b","b","g","g","g","g","a","a","a","i","i","i","i","y","y","p","v","v","v","u","u","u","y","y","y","y","y","y","y","y","y","s","q","q","q","q","q","q","q","q","q","q","n","n","n"]))
+
+print('*'*10)
+print(compress2(["a","b","c","d","e","f","g","g","g","g","g","g","g","g","g","g","g","g","a","b","c"]))
+
+
+
+
