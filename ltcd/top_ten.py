@@ -1,3 +1,12 @@
+#!/usr/local/bin/python3
+
+# make file executabel 
+# add this to the top of the file #!/usr/local/bin/python3
+# in terminal for the carrent session add path $ PATH=$PATH:/Users/Valentynka/vg/ltcd
+# change the mode $ chmod 755 ( to chnage it back $ chmod 644)
+# run file in terminal 
+# $ top_ten.py
+
 def top_ten(arr):
     if (len(arr)<=10):
         arr.sort()
