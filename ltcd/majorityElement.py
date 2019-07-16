@@ -25,3 +25,13 @@ def majorityElement(nums):
         return None
 print(majorityElement([3,2,3]))
 print(majorityElement([2,2,1,1,1,2,2]))
+
+
+def majorityElement2(nums):
+    return sorted(nums)[len(nums) // 2]
+
+def majorityElement3(nums):
+        c = collections.Counter(nums)
+        return c.most_common(1)[0][0]
+
+        
