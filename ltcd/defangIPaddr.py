@@ -27,7 +27,6 @@ def defangIPaddr(address):
         temp[i] = temp[i]+"[.]"
     
     return "".join(temp)
-    
 print(defangIPaddr("1.1.1.1"))
 print(defangIPaddr("255.100.50.0"))
 
@@ -36,3 +35,4 @@ def defangIPaddr2(address):
 
 def defangIPaddr3(address):
     return '[.]'.join(address.split('.'))
+    
