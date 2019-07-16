@@ -64,5 +64,6 @@ print(detectCapitalUse("A"))
 print("A*"*8)
 print(detectCapitalUse("b"))
 print("b*"*8)
+print(detectCapitalUse(""))
 
 
